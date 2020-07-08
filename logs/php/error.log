@@ -1,0 +1,9 @@
+[04-Jul-2020 22:50:35 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in /Users/jessjmyer/Local Sites/applebear/app/public/wp-content/themes/apple-bear/functions.php on line 3 and at least 2 expected in /Users/jessjmyer/Local Sites/applebear/app/public/wp-includes/plugin.php:403
+Stack trace:
+#0 /Users/jessjmyer/Local Sites/applebear/app/public/wp-content/themes/apple-bear/functions.php(3): add_action()
+#1 /Users/jessjmyer/Local Sites/applebear/app/public/wp-settings.php(508): include('/Users/jessjmye...')
+#2 /Users/jessjmyer/Local Sites/applebear/app/public/wp-config.php(77): require_once('/Users/jessjmye...')
+#3 /Users/jessjmyer/Local Sites/applebear/app/public/wp-load.php(37): require_once('/Users/jessjmye...')
+#4 /Users/jessjmyer/Local Sites/applebear/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/jessjmye...')
+#5 {main}
+  thrown in /Users/jessjmyer/Local Sites/applebear/app/public/wp-includes/plugin.php on line 403
