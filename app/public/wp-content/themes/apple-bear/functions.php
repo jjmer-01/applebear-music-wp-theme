@@ -12,14 +12,3 @@ function applebear_features() {
 
 add_action('after_setup_theme', 'applebear_features');
 
-function applebear_post_types() {
-    register_post_type('event', array(
-        'public' => true,
-        'menu_icon' => 'dashicons-calendar',
-        'labels' => array(
-            'name' => 'Events'
-        )
-    )); // creates custom post type "event"
-}
-
-add_action('init', 'applebear_post_types');

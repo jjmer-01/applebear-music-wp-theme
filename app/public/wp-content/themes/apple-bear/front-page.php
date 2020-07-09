@@ -16,42 +16,29 @@
     <section id="events">
     <h3 id="homepage-event-section">Events</h3>
         <div class="events-container">
-            <div class="event-display">
-                <div class="event-date">
-                    <div>Aug</div>
-                    <div>31</div>
+        <?php 
+            $homepageEvents = new WP_QUERY(array(
+                'posts_per_page' => 3,
+                'post_type' => 'event'
+            ));
+
+            while($homepageEvents->have_posts()) {
+                $homepageEvents->the_post(); ?>
+                <div class="event-display">
+                    <div class="event-date">
+                        <div>Aug</div>
+                        <div>31</div>
+                    </div>
+                    <div class="event-detail">
+                        <div class="event-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                        <div class="event-location">LOCATION INFO - NOT UPDATED YET</div>
+                        <div class="event-description"><?php echo wp_trim_words(get_the_content(), 18); ?></div>
+                        <a href="<?php the_permalink(); ?>">...More Details</a>
+                    </div>
                 </div>
-                <div class="event-detail">
-                    <div class="event-title">Open Mic</div>
-                    <div class="event-location">Convention Center</div>
-                    <div class="event-description">Come enjoy a meal at the blankety blanky something while I play music...</div>
-                    <a href="#">...More Details</a>
-                </div>
-            </div>
-            <div class="event-display">
-                <div class="event-date">
-                    <div>Aug</div>
-                    <div>31</div>
-                </div>
-                <div class="event-detail">
-                    <div class="event-title">Open Mic</div>
-                    <div class="event-location">Convention Center</div>
-                    <div class="event-description">Come enjoy a meal at the blankety blanky something while I play music...</div>
-                    <a href="#">...More Details</a>
-                </div>
-            </div>
-            <div class="event-display">
-                <div class="event-date">
-                    <div>Aug</div>
-                    <div>31</div>
-                </div>
-                <div class="event-detail">
-                    <div class="event-title">Open Mic</div>
-                    <div class="event-location">Convention Center</div>
-                    <div class="event-description">Come enjoy a meal at the blankety blanky something while I play music...</div>
-                    <a href="#">...More Details</a>
-                </div>
-            </div>
+
+            <?php }
+        ?>
         </div>
         <div class="homepage-links">
             <a href="#">All Events</a>
