@@ -17,21 +17,38 @@
     <h3 id="homepage-event-section">Events</h3>
         <div class="events-container">
         <?php 
+            $today = date('Ymd');
             $homepageEvents = new WP_QUERY(array(
                 'posts_per_page' => 3,
-                'post_type' => 'event'
+                'post_type' => 'event',
+                'meta_key' => 'event_date',
+                'orderby' => 'meta_value_num',
+                'order' => 'ASC',
+                'meta_query' => array(
+                    array(
+                        'key' => 'event_date',
+                        'compare' => '>=',
+                        'value' => $today,
+                        'type' => 'numeric'
+                    )
+                )
             ));
 
             while($homepageEvents->have_posts()) {
                 $homepageEvents->the_post(); ?>
                 <div class="event-display">
                     <div class="event-date">
-                        <div>Aug</div>
-                        <div>31</div>
+                        <div class="event-month"><?php 
+                            $eventDate = new DateTime(get_field('event_date')); 
+                            echo $eventDate->format('M');
+                        ?></div>
+                        <div class="event-day"><?php 
+                            echo $eventDate->format('d');
+                        ?></div>
                     </div>
                     <div class="event-detail">
                         <div class="event-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-                        <div class="event-location">LOCATION INFO - NOT UPDATED YET</div>
+                        <div class="event-location"><?php the_field('event_venue'); ?></div>
                         <div class="event-description"><?php echo wp_trim_words(get_the_content(), 18); ?></div>
                         <a href="<?php the_permalink(); ?>">...More Details</a>
                     </div>
@@ -41,8 +58,7 @@
         ?>
         </div>
         <div class="homepage-links">
-            <a href="#">All Events</a>
-            <a href="#">Past Events</a>
+            <a href="<?php echo site_url('/events'); ?>">All Events</a>
         </div>
     </section>
 

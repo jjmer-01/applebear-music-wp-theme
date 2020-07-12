@@ -1,7 +1,11 @@
 <?php 
 
 function applebear_post_types() {
+
+    //EVENT POST TYPE
     register_post_type('event', array(
+        'show_in_rest' => true,
+        'supports' => array('title', 'editor', 'excerpt'),
         'rewrite' => array('slug' => 'events'),
         'has_archive' => true,
         'public' => true,
@@ -13,7 +17,7 @@ function applebear_post_types() {
             'all_items' => 'All Events',
             'singular_name' => 'Event'
         )
-    )); // creates custom post type "event"
+    ));
 }
 
 add_action('init', 'applebear_post_types');
