@@ -2,6 +2,7 @@
 <html>
     <head>
         <?php wp_head(); ?> <!-- Let's wp add css for plugins -->
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa&family=Modak&display=swap" rel="stylesheet">
     </head>
     <body>
         

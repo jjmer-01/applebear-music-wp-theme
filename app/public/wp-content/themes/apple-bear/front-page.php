@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-    <h2 id="homepage-home-section">Apple Bear</h2>
+    <div class="homepage-">
+        <h2 id="homepage-home-section">Apple Bear</h2>
+    </div>
 
     <section id="music">
     <h3 id="homepage-music-section">Music</h3>
