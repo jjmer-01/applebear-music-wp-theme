@@ -1,11 +1,12 @@
 <?php get_header(); ?>
 
-    <div class="homepage-">
-        <h2 id="homepage-home-section">Apple Bear</h2>
+<div class="homepage">
+    <div class="homepage-title-text">
+        <h1 id="homepage-home-section">Apple Bear</h1>
     </div>
 
     <section id="music">
-    <h3 id="homepage-music-section">Music</h3>
+    <h2 id="homepage-music-section" class="homepage-section-titles">Music</h2>
         <div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/_qm58VgnLjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -16,7 +17,7 @@
     </section>
 
     <section id="events">
-    <h3 id="homepage-event-section">Events</h3>
+    <h2 id="homepage-event-section" class="homepage-section-titles">Events</h2>
         <div class="events-container">
         <?php 
             $today = date('Ymd');
@@ -65,7 +66,7 @@
     </section>
 
     <section id="contact">
-    <h3 id="homepage-contact-section">Contact</h3>
+    <h2 id="homepage-contact-section" class="homepage-section-titles">Contact</h2>
         <div>
             <form>
                 <label for="name-input">Name:</label>
@@ -78,6 +79,9 @@
             </form>
         </div>
     </section>
+</div>
+
+
 
 
 <?php get_footer();?>

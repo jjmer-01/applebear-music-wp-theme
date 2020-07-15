@@ -6,7 +6,7 @@
     </head>
     <body>
         
-        <h1>Apple Bear</h1>
+        <!-- <h1>Apple Bear</h1> -->
         
         <nav class="head-nav"><ul>
             <?php  
