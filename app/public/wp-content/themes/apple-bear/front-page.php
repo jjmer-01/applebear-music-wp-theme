@@ -5,7 +5,7 @@
         <h1 id="homepage-home-section">Apple Bear</h1>
     </div>
 
-    <section id="music">
+    <section id="music" class="fp-section orange-background">
     <h2 id="homepage-music-section" class="homepage-section-titles">Music</h2>
         <div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/_qm58VgnLjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -16,7 +16,7 @@
         </div>
     </section>
 
-    <section id="events">
+    <section id="events" class="fp-section transparent-background">
     <h2 id="homepage-event-section" class="homepage-section-titles">Events</h2>
         <div class="events-container">
         <?php 
@@ -52,7 +52,7 @@
                     <div class="event-detail">
                         <div class="event-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
                         <div class="event-location"><?php the_field('event_venue'); ?></div>
-                        <div class="event-description"><?php echo wp_trim_words(get_the_content(), 18); ?></div>
+                        <div class="event-description"><?php echo wp_trim_words(get_the_content(), 8); ?></div>
                         <a href="<?php the_permalink(); ?>">...More Details</a>
                     </div>
                 </div>
@@ -65,16 +65,16 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="fp-section orange-background">
     <h2 id="homepage-contact-section" class="homepage-section-titles">Contact</h2>
         <div>
-            <form>
+            <form class="contact-form">
                 <label for="name-input">Name:</label>
-                <input type="text" id="name-input" placeholder="Namey Namerson" />
+                <input class="contact-input" type="text" id="name-input" placeholder="Namey Namerson" />
                 <label for="email-input">Email:</label>
-                <input type="text" id="email-input" placeholder="your@email.com" />
+                <input class="contact-input" type="text" id="email-input" placeholder="your@email.com" />
                 <label for="message-input">Message:</label>
-                <textarea id="message-input" placeholder="Enter your message here." ></textarea>
+                <textarea class="contact-input" id="message-input" placeholder="Enter your message here." ></textarea>
                 <button>Send Icon</button>
             </form>
         </div>

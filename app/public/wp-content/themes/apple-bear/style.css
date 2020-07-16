@@ -108,28 +108,25 @@ li a {
 /* HOMEPAGE  */
 
 .homepage {
-
-    background-image: url('./images/apple-bear.jpg');
+    background-image: url('./images/apple-bear-bw.jpg');
     background-attachment: fixed;
     background-position: right -800px bottom 20px;
-    height: 100vh;
-    filter: grayscale(100%) contrast(100%);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .homepage-title-text {
-    height: 100vh;
-    width: 100vw;
-    /* position: absolute;
-    left: 100px; */
-
+    height: 95vh;
+    /* width: 100vw; */
 }
 
 #homepage-home-section {
-    color: white;
+    color: red;
     font-family: 'Modak', cursive;
     font-size: 300px;
     font-weight: 100;
     transform: rotate(-90deg);
+    /* width: 100vh; */
 }
 
 .homepage-section-titles {
@@ -137,8 +134,50 @@ li a {
     font-family: 'Lexend Exa', sans-serif;
 }
 
-#music {
+/* .fp-section {
+    height: 80vh;
+} */
+
+.orange-background {
     background-color: orange;
-    filter: grayscale(0%);
+}
+
+.transparent-background {
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+.event-display {
+    background-color: orange;
+    margin: 30px;
+    padding: 10px;
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 40px;
+    border-radius: 50px;
+}
+
+/* CONTACT  */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 40px;
+    align-items: center;
+}
+
+.contact-input {
+    font-size: 40px;
+    font-family: 'Lexend Exa', sans-serif;
+    width: 70vw;
+    display: flex;
+    margin: 20px;
+}
+
+/* FOOTER */
+
+#footer {
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 40px;
+    background-color: black;
 }
 
