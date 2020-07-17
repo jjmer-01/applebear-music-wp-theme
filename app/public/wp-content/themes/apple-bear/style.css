@@ -134,9 +134,10 @@ li a {
     font-family: 'Lexend Exa', sans-serif;
 }
 
-/* .fp-section {
-    height: 80vh;
-} */
+.homepage-links {
+    font-size: 4em;
+    font-family: 'Lexend Exa', sans-serif;
+}
 
 .orange-background {
     background-color: orange;
@@ -146,6 +147,8 @@ li a {
     background-color: rgba(255, 255, 255, 0.0);
 }
 
+/* EVENTS  */
+
 .event-display {
     background-color: orange;
     margin: 30px;
@@ -153,6 +156,12 @@ li a {
     font-family: 'Lexend Exa', sans-serif;
     font-size: 40px;
     border-radius: 50px;
+}
+
+.event-date {
+    background-color: white;
+    color: red;
+    border-radius: 50%;
 }
 
 /* CONTACT  */
