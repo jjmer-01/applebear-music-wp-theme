@@ -8,11 +8,11 @@
     <section id="music" class="fp-section orange-background">
     <h2 id="homepage-music-section" class="homepage-section-titles">Music</h2>
         <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_qm58VgnLjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/_qm58VgnLjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="homepage-links">
-            <a href="https://www.youtube.com/channel/UCXPAQzWFkDqyBEffKtiSc9g">Youtube</a> | 
-            <a href="https://applebear.bandcamp.com/">bandcamp</a>
+        <div class="homepage-links homepage-links-icons">
+            <a class="a-icon" href="https://www.youtube.com/channel/UCXPAQzWFkDqyBEffKtiSc9g"><i class="fab fa-youtube"></i></a> 
+            <a class="a-icon" href="https://applebear.bandcamp.com/"><i class="fab fa-bandcamp"></i></a>
         </div>
     </section>
 

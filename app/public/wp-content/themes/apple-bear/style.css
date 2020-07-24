@@ -83,12 +83,35 @@ body {
    padding: 0;
 }
 
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+.a-icon {
+    padding: 70px;
+}
+
 /* NAV / HEADER  */
+
+.nav-down {
+    position: fixed;
+    /* top: 30px; */
+    transition: top 0.2s ease-in-out;
+}
+
+.nav-up {
+    top: -30px;
+}
 
 #menu-homepage-menu {
     display: flex;
     flex-direction: row;
-    background-color: orange;
+    background-color: #cc6600;
     width: 100vw;
 }
 
@@ -116,52 +139,103 @@ li a {
 }
 
 .homepage-title-text {
-    height: 95vh;
-    /* width: 100vw; */
-}
+    height: 100vh; 
+    width: 100vw; 
+} 
 
 #homepage-home-section {
     color: red;
     font-family: 'Modak', cursive;
-    font-size: 300px;
+    font-size: 250px;
     font-weight: 100;
     transform: rotate(-90deg);
-    /* width: 100vh; */
+    height: 40vw;
+    width: 95vh;
+    position: relative;
+    bottom: -400px;
+    left: -400px;
 }
 
 .homepage-section-titles {
-    font-size: 6em;
+    font-size: 9em;
     font-family: 'Lexend Exa', sans-serif;
+    padding-top: 200px;
+    padding-bottom: 80px;
+    text-transform: uppercase;
+    color: white;
 }
 
 .homepage-links {
-    font-size: 4em;
+    font-size: 6em;
+    color: white;
     font-family: 'Lexend Exa', sans-serif;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.homepage-links-icons {
+    font-size: 10em;
 }
 
 .orange-background {
-    background-color: orange;
+    background-color: #cc6600;
 }
 
 .transparent-background {
     background-color: rgba(255, 255, 255, 0.0);
+    color: white;
+}
+
+/* MUSIC  */
+iframe {
+    width: 100vw;
+    height: 40vh;
 }
 
 /* EVENTS  */
 
+/* #homepage-event-section {
+    color: white;
+} */
+
 .event-display {
-    background-color: orange;
-    margin: 30px;
-    padding: 10px;
+    background-color: #cc6600;
+    margin: 50px;
+    padding: 30px;
     font-family: 'Lexend Exa', sans-serif;
     font-size: 40px;
     border-radius: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .event-date {
     background-color: white;
     color: red;
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.event-detail {
+    width: 70vw;
+    padding-left: 20px;
+}
+
+.event-title {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.event-description {
+    font-size: .75em;
 }
 
 /* CONTACT  */
@@ -186,7 +260,7 @@ li a {
 
 #footer {
     font-family: 'Lexend Exa', sans-serif;
-    font-size: 40px;
-    background-color: black;
+    background-color: #cc6600;
+    padding: 100px;
 }
 
